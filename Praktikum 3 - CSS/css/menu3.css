@@ -23,9 +23,10 @@
     margin-top: 10px;
 }
 #tengah{
-    height: 100px;
+    height: 100px; 
     padding: 10px;
     background-color: #cccccc;
+    margin: 10px 290px 0 290px;
 }
 #footer{
     clear: both;
