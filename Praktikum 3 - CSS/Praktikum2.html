@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS 2</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th,td{
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even){
+                background-color: #f2f2f2
+            }
+            th{
+                background-color: #4caf50;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Colored Table Header</h2>
+        <table border="2">
+            <caption>Jadwal Kuliah</caption>
+            <tr>
+                <th colspan ="2">Hari/Jam</th>
+                <th>Mata Kuliah</th>
+                <th>Kelas</th>
+                <th>Ruang</th>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>08.00</td>
+                <td>Proyek 2</td>
+                <td>TI-15-1</td>
+                <td>Lab.RPL</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>13.00</td>
+                <td rowspan="3">Pemprograman 2</td>
+                <td>TI-15-1</td>
+                <td>G1.R1</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>08.00</td>
+                <td>TI-15-1</td>
+                <td>G1.R1</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>08.00</td>
+                <td>TI-15-2</td>
+                <td>G1.R1</td>
+            </tr>
+            <tr>
+                <td>Senin</td>
+                <td>08.00</td>
+                <td>Proyek</td>
+                <td>TI-15-1</td>
+                <td>G1.Lab1.TI</td>
+            </tr>
+        </table>
+    </body>
+</html>
