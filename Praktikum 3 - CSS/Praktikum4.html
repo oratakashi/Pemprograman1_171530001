@@ -2,7 +2,34 @@
     <head>
         <title>CSS 4</title>
         <style>
-            nanti{
+            input[type=date],select, input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                display: inline-block;
+                border:1px solid #cccccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=date]:focus,input[type=text]:focus, textarea:focus{
+                background-color: rgb(225, 247, 255);
+            }
+            input[type=date]:hover,input[type=text]:hover, textarea:hover{
+                background-color: rgb(207, 173, 230);
+            }
+            input[type=submit]{
+                width: 20%;
+                background-color: #4caf50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=reset]{
+                width: 20%;
+                background-color: #4caf50;
+                color: white;
                 padding: 14px 20px;
                 margin: 8px;
                 border: none;
@@ -47,6 +74,8 @@
                     <option value="Laki-laki">Laki-laki</option>
                     <option value="Perempuan">Perempuan</option>
                 </select>
+                <label for="tsttgl">Tanggal Lahir</label>
+                <input type="date" name="txttgl" id="txttgl">
                 <label for="txtalamat">Alamat</label>
                 <textarea name="txtalamat" id="txtalamat" ></textarea>
                 <input type="submit" value="Simpan">&nbsp;
