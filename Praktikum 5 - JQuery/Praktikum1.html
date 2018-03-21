@@ -2,23 +2,28 @@
 <html>
     <head>
         <title>Praktikum 1 : Belajar pengenalan jquery dasar</title>
-        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script> <!-- Instalasi Offline -->
         <!--
             onlin
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script> 
         -->
-        <link rel="stylesheet" type="text/css" href="asset/css/stylel.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/style1.css"> <!-- Link CSS di folder asset/css -->
     </head>
     <body>
         <h1>Tutorial JQuery</h1>
         <button id="tombol">TOMBOL</button>
         <div class="box"></div>
-    </body>
-    <script type="text/javascript">
+    </body> 
+    <script type="text/javascript"> 
     $(document).ready(function(){
         $('#tombol').click(function(){
             $('.box').toggle();
         });
     });
     </script>
+    <!-- Text Script Javascript/Jquery
+    baris 18 : ketika dokumen telah siap.
+    baris 19 : jika selector tombol dilakukan klik maka akan menjalankan statment di bawahny
+    baris 20 : selector box dengan tipe class menjalankan fungtion toggle()
+    -->
 </html>
