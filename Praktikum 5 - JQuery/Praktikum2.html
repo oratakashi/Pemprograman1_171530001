@@ -1,23 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Praktikum 2 : Event Mouse</title>
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <script type="text/javascritpt" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/stylel.css">
     </head>
     <body>
         <h1>Event mouseenter() dan mouseleave()</h1>
-        <button id="tombol">Tombol</button>
+        <button id="tombol">TOMBOL</button>
         <div class="box"></div>
     </body>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('#tombol').mouseenter(function(){
-                $('.box').show();
-            });
-            $('#tombol').mouseleave(function(){
-                $('.box').hide();
-            });
+    $(document).ready(function(){
+        $('#tombol').mouseenter(function(){
+            $('.box').show();
         });
+
+            $('#tombol').mouseenter(function(){
+                 $('.box').hide();
+            });
+
+    });
+
     </script>
 </html>

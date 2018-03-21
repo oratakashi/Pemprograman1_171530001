@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 5 : Effect Slide</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/stylel.css">
+    </head>
+    <body>
+        <h1>Efect pada JQuery | Slide</h1>
+        <button id="tombol1">TAMPILAN(slideDown)</button>
+        <button id="tombol2">Sembunyikan (slideUp)</button>
+        <button id="tombol3">Effect slide toggle (slideToggle)</button>
+        <div class="box"></div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol1').click(function(){
+                $('.box').slideDown();
+            });
+            $('#tombol2').click(function(){
+                $('.box').slideUp();
+            });
+            $('#tombol3').click(function(){
+                $('.box').slideToggle();
+            });
+        });
+    </script>
+</html>

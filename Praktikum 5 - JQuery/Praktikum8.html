@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 8 : Chaining Function</title>
+        <script type="text/javascripty" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/stylel.css">
+    </head>
+    <body>
+        <h1>Callback Function pada JQuery</h1>
+        <button id="tombol">KLIK</button>
+        <div class="box"></div>
+        <div class="kotak_biru">function callback di jalankan</div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol').click(function(){
+                $('.box').fadeIn(800).slideUp(900).slideDown(300);
+            });
+        });
+    </script>
+</html>
