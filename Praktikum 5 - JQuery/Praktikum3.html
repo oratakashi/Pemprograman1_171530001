@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Praktikum 3 : Effect Hide Show</title>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+    </head>
+    <body>
+        <h1>Effect pada JQuery | Hide dan Show</h1>
+        <button id="tombol1">Tampilkan</button>
+        <button id="tombol2">Sembunyikan</button>
+        <div class="box"></div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol1').click(function(){
+                $('.box').show();
+            });
+            $('tombol2').click(function(){
+                $('.box').hide();
+            });
+        });
+    </script>
+</html>
