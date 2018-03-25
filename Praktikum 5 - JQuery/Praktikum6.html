@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Praktikum 6 : Effect Fade</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet"type="text/css"href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>Effect pada JQuery | Fade</h1>
+        <button id="tombol">Tampilkan (fadeIn)</button>
+        <button id="tombol2">Sembunyikan (fadeOut)</button>
+        <button id="tombol3">Effect Slide Toggle (fadeToggle)</button>
+        <div class="box"></div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tombol1').click(function(){
+                $('.box').fadeIn();
+                //$('.box).fadeIn(800);dengan durasi
+            });
+            $('#tombol2').click(function(){
+                $('.box').fadeOut();
+                //$('.box).fadeOut('fast);dengan durasi
+            });
+            $('#tombol3').click(function(){
+                $('.box').fadeToggle();
+            });
+        });
+    </script>
+</html>

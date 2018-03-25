@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 19 : Menambahkan CSS dengan JQuery</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="Stylesheet"type="text/css"href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>CSS Function JQuery</h1>
+        <button class="tombol1"id="tambah">Tambahkan CSS</button>
+        <div class="lingkaran"></div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#tambah').click(function(){
+                $('.lingkaran').css("background","blue");
+            });
+        });
+    </script>
+</html>

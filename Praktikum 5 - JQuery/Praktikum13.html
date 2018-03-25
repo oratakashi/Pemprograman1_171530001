@@ -1,20 +1,19 @@
-<!DOCTYPE Html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Praktikum 8 : Chaining Function</title>
+        <title>Praktikum 13 : Set Value text()</title>
         <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
         <link rel="stylesheet"type="text/css"href="asset/css/style1.css">
     </head>
     <body>
-        <h1>Chaining Function pada JQuery</h1>
+        <h1>Set Function JQuery | text()</h1>
         <button id="tombol">KLIK</button>
-        <div class="box"></div>
-        <div class="kotak_biru">function Chaining dijalankan</div>
+        <p class="nama"></p>
     </body>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#tombol').click(function(){
-                $('.box').fadeIn(800).slideUp(900).slideDown(300);
+            $('#tombol1').click(function(){
+                $('.nama').text("belajar pemrograman web modul jquery");
             });
         });
     </script>

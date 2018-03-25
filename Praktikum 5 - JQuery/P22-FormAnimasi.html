@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 22 | Form Animasi</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="Stylesheet"type="text/css"href="asset/css/animasi.css">
+    </head>
+    <body>
+        <div class="kotak">
+            <h1>
+                Membuat Animasi Form dengan JQuery
+            </h1>
+            <form class="form">
+                <input type="text"id="nama" placeholder="Masukkan nama.."name="nama">
+                <input type="text"id="alamat"placeholder="Masukkan alamat.."name="alamat">
+                <input type="text"id="pekerjaan"placeholder="Masukkan pekerjaan.."name="pekerjaan">
+            </form>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#nama").keyup(function(){
+                    $("#alamat").slideDown();
+                });
+                $("#alamat").keyup(function(){
+                    $("#pekerjaan").fadeIn();
+                });
+            });
+        </script>
+    </body>
+</html>

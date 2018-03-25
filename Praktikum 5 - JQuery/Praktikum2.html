@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Praktikum 2 : Event Mouse</title>
-        <script type="text/javascritpt" src="asset/js/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+        <title>Praktikum2 : Event Mouse</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet"type="text/css"href="asset/css/style1.css">
     </head>
     <body>
         <h1>Event mouseenter() dan mouseleave()</h1>
@@ -11,16 +11,13 @@
         <div class="box"></div>
     </body>
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('#tombol').mouseenter(function(){
-            $('.box').show();
+        $(document).ready(function(){
+            $('#tombol').mouseenter(function(){
+                $('.box').show();
+            });
+            $('#tombol').mouseleave(function(){
+                $('.box').hide();
+            });
         });
-
-        $('#tombol').mouseenter(function(){
-            $('.box').hide();
-        });
-
-    });
-
     </script>
 </html>

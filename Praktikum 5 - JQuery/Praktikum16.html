@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Praktikum 16 : menambah Element dengan JQuery</title>
-        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="asset/css/style1.css">
+        <title>Praktikum 16 : Menambah Element dengan JQuery</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet"type="text/css"href="asset/css/style.css">
     </head>
     <body>
         <h1>Add Function JQuery</h1>
@@ -18,16 +18,19 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.after').click(function(){
-                $('.kotak').after("<h4>contoh after</h4>")
+                $('.kotak').after("<h4>Contoh after</h4>")
             });
-            $('.after').click(function(){
-                $('.kotak').before("<h4>contoh before</h4>")
+            
+            $('.before').click(function(){
+                $('.kotak').after("<h4>Contoh before</h4>")
             });
-            $('.after').click(function(){
-                $('.kotak').append("<h4>contoh append</h4>")
+
+            $('.append').click(function(){
+                $('.kotak').after("<h4>Contoh append</h4>")
             });
-            $('.after').click(function(){
-                $('.kotak').prepend("<h4>contoh prepend</h4>")
+
+            $('.prepend').click(function(){
+                $('.kotak').after("<h4>Contoh prepend</h4>")
             });
         });
     </script>

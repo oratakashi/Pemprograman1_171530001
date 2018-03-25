@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 18 : Manipulasi Class</title>
+        <script type="text/javascript"src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="Stylesheet"type="text/css"href="asset/css/style1.css">
+    </head>
+    <body>
+        <h1>add and remove class Function JQuery</h1>
+        <button class="tombol1"id="tambah">Tambahkan Class</button>
+        <button class="tombol1"id="hapus">Hapus Class</button>
+        <div class="lingkaran"></div>
+        <p class="pesan"></p>
+    </body>
+    <script type="text/javascript">
+        $('document').ready (function(){
+            $('#tambah').click(function(){
+                $('.lingkaran').addClass('biru');
+                $('.pesan').text('class biru ditambahkan');
+            });
+            $('#hapus').click(function(){
+                $('.lingkaran').removeClass('biru');
+                $('.pesan').text('Class biru dihapus');
+            });
+        });
+    </script>
+</html>
