@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Praktikum 20 - Modal Dialog</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asset/css/modal.css">
+    </head>
+    <body>
+        <center><h1>Membuat modal dialog dengan JQuery</h1></center>
+        <button id="tombol">Klik Saya!!</button>
+        Klik tombol untuk menampilkan modal dialog
+        <div id="bg"></div>
+        <div id="modal-kotak">
+            <div id="atas">
+                Halo . ini adalah modal dialog
+            </div>
+            <div id="bawah">
+                <button id="tombol-tutup">Close</button>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('#tombol').click(function(){
+                    $('#modal-kotak , #bg').fadeIn('slow');
+                });
+                $('#tombol-tutup').click(function(){
+                    $('#modal-kotak, #bg').fadeOut('slow');
+                });
+            });
+        </script>
+    </body>
+</html>

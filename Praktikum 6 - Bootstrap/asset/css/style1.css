@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+}
+   
+h1{
+    text-align: center;
+}
+   
+.box{
+    height: 300px;
+    width:300px;
+    background: orange;
+}
+   
+#tombol1, #tombol2, #tombol3, #tombol4{
+    padding:10px;
+    color: #fff;
+    background: #34495E;
+    border: none;
+}
+
+.kotak_biru{
+	padding:50px;
+	width: 400px;
+	display: none;
+	background: blue;
+}
+
+.kotak{
+	width: 300px;
+	height: auto;
+	background: orange;
+	padding: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+ 
+.kotak span{
+	background: red;
+	padding: 10px;
+}
+
+.lingkaran{
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	background: orange;
+	padding: 30px;
+	color: #fff;
+	margin-top:  20px;
+}
+ 
+.biru{
+	border-radius: 0;
+	background: blue;
+}

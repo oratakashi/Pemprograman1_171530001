@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Praktikum 21 | Form Validasi</title>
+        <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="asset/css/validasi.css">
+    </head>
+    <body>
+        <h1>Membuat Form Validasi Dengan JQuery (Tanpa Plugin)</h1>
+        <div class="kotak">
+            <form method="POST" class="form">
+                <input type="text" name="nama" id="nama" placeholder="Masukan nama anda..">
+                <span class="pesan pesan-nama">Anda Harus Mengisi Nama!</span><br/><br/>
+                <input type="text" name="notelp" id="angka" placeholder="No. Telepon anda..">
+                <span class="pesan pesan-angka">Np. Telepon harus diisi dengan angka!</span><br/><br/>
+                <input type="submit" value="Simpan">
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#angka').keyup(function(){
+                this.value =this.value.replace(/[^0-9/]/g,'');
+                $(".pesan-angka").css('display','block');
+            });
+            $('.form').submit(function(){
+                var nama = $('#nama').val().length;
+                if (nama==0){
+                    $(".pesan-nama").css('display','block');
+                    return false;
+                }
+            });
+        });
+    </script>
+</html>

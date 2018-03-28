@@ -1,0 +1,36 @@
+body{
+	font-family: sans-serif;
+	background: #fcfcfc;
+}
+
+h1{
+	text-align: center;	
+}
+
+input[type="text"]{
+	padding: 10px;
+	font-size: 12pt;
+	width: 100%;
+}
+
+input[type="submit"]{
+	padding: 10px;
+	font-size: 12pt;
+	background: #E84C3D;
+	border: none;
+	color: #fff;
+}
+
+.kotak{
+	background: #1ABC9C;
+	width: 300px;
+	padding:100px;
+	margin: 10px auto;
+}
+
+.pesan{
+	display: none;
+	color: white;	
+	margin: 10px;
+}
+
