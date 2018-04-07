@@ -4,6 +4,36 @@
     </head>
     <body>
         <h1 id="demo"></h1>
-        
+        <p><script language="Javascipt">
+            document.writeIn("<pre>");
+            document.writeIn("<h1>Struktur Kontrol Percabangan Switch</h1>");
+
+            var day;
+            switch(new date().getDay()) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+                    break;
+            }
+            document.getElementById("demo").innerHTML = "Today is " + day;
+            document.writeIn("</pre>");
+        </script></p>
     </body>
 </html>
