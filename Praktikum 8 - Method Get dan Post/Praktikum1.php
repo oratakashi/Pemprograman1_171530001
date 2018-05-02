@@ -10,8 +10,8 @@
     </body>
 </html>
 <?php
-    if(isset($_POST['Input'])){
-        $nama = $_POST['nama'];
-        echo "Nama Anda : <b>$nama</b>";
+    if(isset($_POST['Input'])){ //jika tombol submit dengan atribut ame Input di klik atau enter
+        $nama = $_POST['nama'];//deklarasi var $name dan di berinilai variabel post
+        echo "Nama Anda : <b>$nama</b>"; //menampilkan nilai variabel $nama
     }
 ?>
