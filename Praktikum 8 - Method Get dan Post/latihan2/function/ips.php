@@ -7,7 +7,6 @@
     $sks_prg = 3;
     $sks_erp = 3;
     $sks_pryk = 3;
-    $jumlah = 0 ;
 
     //Menghitung rata2
     $na = $mtk + $akt + $pai + $db + $prg + $erp + $pryk;
